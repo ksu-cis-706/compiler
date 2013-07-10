@@ -1,0 +1,1950 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>StaticJavaASTAltLexer</title>
+<link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StaticJavaASTAltLexer";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StaticJavaASTAltLexer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../index-files/index-1.html">Index</a></li>
+<li><a href="../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../sjc/parser/StaticJavaAST2JDT.html" title="class in sjc.parser"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../sjc/parser/StaticJavaASTAltParser.html" title="class in sjc.parser"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../index.html?sjc/parser/StaticJavaASTAltLexer.html" target="_top">Frames</a></li>
+<li><a href="StaticJavaASTAltLexer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">sjc.parser</div>
+<h2 title="Class StaticJavaASTAltLexer" class="title">Class StaticJavaASTAltLexer</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>org.antlr.runtime.BaseRecognizer</li>
+<li>
+<ul class="inheritance">
+<li>org.antlr.runtime.Lexer</li>
+<li>
+<ul class="inheritance">
+<li>sjc.parser.StaticJavaASTAltLexer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>org.antlr.runtime.TokenSource</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">StaticJavaASTAltLexer</span>
+extends org.antlr.runtime.Lexer</pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#ASSIGN_STMT">ASSIGN_STMT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#BINARY_EXP">BINARY_EXP</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#BODY">BODY</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#BOOLEAN">BOOLEAN</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#CLASS_DEF">CLASS_DEF</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#COMP_UNIT">COMP_UNIT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#END">END</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#EOF">EOF</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#FALSE_LIT">FALSE_LIT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#FIELD_DECL">FIELD_DECL</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#ID">ID</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#IF_STMT">IF_STMT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#INT">INT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#INT_LIT">INT_LIT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#INVOKE_EXP">INVOKE_EXP</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#INVOKE_STMT">INVOKE_STMT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#LIST">LIST</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#LOCAL_DECL">LOCAL_DECL</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#MAIN_DECL">MAIN_DECL</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#METHOD_DECL">METHOD_DECL</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#NUM_INT">NUM_INT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#OPTION">OPTION</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#PARAM">PARAM</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#PAREN_EXP">PAREN_EXP</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#RETURN_STMT">RETURN_STMT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__35">T__35</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__36">T__36</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__37">T__37</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__38">T__38</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__39">T__39</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__40">T__40</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__41">T__41</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__42">T__42</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__43">T__43</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__44">T__44</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__45">T__45</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__46">T__46</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__47">T__47</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__48">T__48</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__49">T__49</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__50">T__50</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__51">T__51</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__52">T__52</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__53">T__53</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__54">T__54</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__55">T__55</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__56">T__56</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__57">T__57</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__58">T__58</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__59">T__59</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__60">T__60</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__61">T__61</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__62">T__62</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__63">T__63</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__64">T__64</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__65">T__65</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__66">T__66</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__67">T__67</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__68">T__68</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__69">T__69</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#T__70">T__70</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#TRUE_LIT">TRUE_LIT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#TYPE">TYPE</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#UNARY_EXP">UNARY_EXP</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#VAR_REF_EXP">VAR_REF_EXP</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#VOID">VOID</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#WHILE_STMT">WHILE_STMT</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#WS">WS</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.antlr.runtime.BaseRecognizer">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.antlr.runtime.BaseRecognizer</h3>
+<code>DEFAULT_TOKEN_CHANNEL, HIDDEN, INITIAL_FOLLOW_STACK_SIZE, MEMO_RULE_FAILED, MEMO_RULE_UNKNOWN, NEXT_TOKEN_RULE_NAME</code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#StaticJavaASTAltLexer()">StaticJavaASTAltLexer</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#StaticJavaASTAltLexer(org.antlr.runtime.CharStream)">StaticJavaASTAltLexer</a></strong>(org.antlr.runtime.CharStream&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#StaticJavaASTAltLexer(org.antlr.runtime.CharStream, org.antlr.runtime.RecognizerSharedState)">StaticJavaASTAltLexer</a></strong>(org.antlr.runtime.CharStream&nbsp;input,
+                     org.antlr.runtime.RecognizerSharedState&nbsp;state)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.antlr.runtime.Lexer[]</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#getDelegates()">getDelegates</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#getGrammarFileName()">getGrammarFileName</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mID()">mID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mNUM_INT()">mNUM_INT</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__35()">mT__35</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__36()">mT__36</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__37()">mT__37</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__38()">mT__38</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__39()">mT__39</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__40()">mT__40</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__41()">mT__41</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__42()">mT__42</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__43()">mT__43</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__44()">mT__44</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__45()">mT__45</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__46()">mT__46</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__47()">mT__47</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__48()">mT__48</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__49()">mT__49</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__50()">mT__50</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__51()">mT__51</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__52()">mT__52</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__53()">mT__53</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__54()">mT__54</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__55()">mT__55</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__56()">mT__56</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__57()">mT__57</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__58()">mT__58</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__59()">mT__59</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__60()">mT__60</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__61()">mT__61</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__62()">mT__62</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__63()">mT__63</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__64()">mT__64</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__65()">mT__65</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__66()">mT__66</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__67()">mT__67</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__68()">mT__68</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__69()">mT__69</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mT__70()">mT__70</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mTokens()">mTokens</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../sjc/parser/StaticJavaASTAltLexer.html#mWS()">mWS</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.antlr.runtime.Lexer">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.antlr.runtime.Lexer</h3>
+<code>emit, emit, getCharErrorDisplay, getCharIndex, getCharPositionInLine, getCharStream, getEOFToken, getErrorMessage, getLine, getSourceName, getText, match, match, matchAny, matchRange, nextToken, recover, reportError, reset, setCharStream, setText, skip, traceIn, traceOut</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.antlr.runtime.BaseRecognizer">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.antlr.runtime.BaseRecognizer</h3>
+<code>alreadyParsedRule, beginResync, consumeUntil, consumeUntil, displayRecognitionError, emitErrorMessage, endResync, failed, getBacktrackingLevel, getErrorHeader, getNumberOfSyntaxErrors, getRuleInvocationStack, getRuleInvocationStack, getRuleMemoization, getRuleMemoizationCacheSize, getTokenErrorDisplay, getTokenNames, match, matchAny, memoize, mismatchIsMissingToken, mismatchIsUnwantedToken, recover, recoverFromMismatchedSet, setBacktrackingLevel, toStrings, traceIn, traceOut</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="EOF">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EOF</h4>
+<pre>public static final&nbsp;int EOF</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.EOF">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__35">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__35</h4>
+<pre>public static final&nbsp;int T__35</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__35">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__36">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__36</h4>
+<pre>public static final&nbsp;int T__36</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__36">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__37">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__37</h4>
+<pre>public static final&nbsp;int T__37</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__37">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__38">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__38</h4>
+<pre>public static final&nbsp;int T__38</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__38">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__39">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__39</h4>
+<pre>public static final&nbsp;int T__39</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__39">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__40">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__40</h4>
+<pre>public static final&nbsp;int T__40</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__40">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__41">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__41</h4>
+<pre>public static final&nbsp;int T__41</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__41">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__42">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__42</h4>
+<pre>public static final&nbsp;int T__42</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__42">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__43">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__43</h4>
+<pre>public static final&nbsp;int T__43</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__43">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__44">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__44</h4>
+<pre>public static final&nbsp;int T__44</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__44">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__45">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__45</h4>
+<pre>public static final&nbsp;int T__45</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__45">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__46">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__46</h4>
+<pre>public static final&nbsp;int T__46</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__46">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__47">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__47</h4>
+<pre>public static final&nbsp;int T__47</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__47">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__48">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__48</h4>
+<pre>public static final&nbsp;int T__48</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__48">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__49">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__49</h4>
+<pre>public static final&nbsp;int T__49</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__49">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__50">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__50</h4>
+<pre>public static final&nbsp;int T__50</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__50">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__51">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__51</h4>
+<pre>public static final&nbsp;int T__51</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__51">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__52">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__52</h4>
+<pre>public static final&nbsp;int T__52</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__52">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__53">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__53</h4>
+<pre>public static final&nbsp;int T__53</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__53">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__54">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__54</h4>
+<pre>public static final&nbsp;int T__54</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__54">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__55">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__55</h4>
+<pre>public static final&nbsp;int T__55</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__55">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__56">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__56</h4>
+<pre>public static final&nbsp;int T__56</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__56">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__57">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__57</h4>
+<pre>public static final&nbsp;int T__57</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__57">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__58">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__58</h4>
+<pre>public static final&nbsp;int T__58</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__58">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__59">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__59</h4>
+<pre>public static final&nbsp;int T__59</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__59">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__60">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__60</h4>
+<pre>public static final&nbsp;int T__60</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__60">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__61">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__61</h4>
+<pre>public static final&nbsp;int T__61</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__61">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__62">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__62</h4>
+<pre>public static final&nbsp;int T__62</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__62">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__63">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__63</h4>
+<pre>public static final&nbsp;int T__63</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__63">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__64">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__64</h4>
+<pre>public static final&nbsp;int T__64</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__64">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__65">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__65</h4>
+<pre>public static final&nbsp;int T__65</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__65">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__66">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__66</h4>
+<pre>public static final&nbsp;int T__66</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__66">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__67">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__67</h4>
+<pre>public static final&nbsp;int T__67</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__67">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__68">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__68</h4>
+<pre>public static final&nbsp;int T__68</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__68">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__69">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__69</h4>
+<pre>public static final&nbsp;int T__69</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__69">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="T__70">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>T__70</h4>
+<pre>public static final&nbsp;int T__70</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.T__70">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="ASSIGN_STMT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ASSIGN_STMT</h4>
+<pre>public static final&nbsp;int ASSIGN_STMT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.ASSIGN_STMT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="BINARY_EXP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BINARY_EXP</h4>
+<pre>public static final&nbsp;int BINARY_EXP</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.BINARY_EXP">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="BODY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BODY</h4>
+<pre>public static final&nbsp;int BODY</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.BODY">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="BOOLEAN">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BOOLEAN</h4>
+<pre>public static final&nbsp;int BOOLEAN</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.BOOLEAN">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="CLASS_DEF">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CLASS_DEF</h4>
+<pre>public static final&nbsp;int CLASS_DEF</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.CLASS_DEF">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="COMP_UNIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COMP_UNIT</h4>
+<pre>public static final&nbsp;int COMP_UNIT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.COMP_UNIT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="END">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>END</h4>
+<pre>public static final&nbsp;int END</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.END">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FALSE_LIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FALSE_LIT</h4>
+<pre>public static final&nbsp;int FALSE_LIT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.FALSE_LIT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FIELD_DECL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FIELD_DECL</h4>
+<pre>public static final&nbsp;int FIELD_DECL</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.FIELD_DECL">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="ID">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ID</h4>
+<pre>public static final&nbsp;int ID</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.ID">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="IF_STMT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IF_STMT</h4>
+<pre>public static final&nbsp;int IF_STMT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.IF_STMT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="INT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INT</h4>
+<pre>public static final&nbsp;int INT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.INT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="INT_LIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INT_LIT</h4>
+<pre>public static final&nbsp;int INT_LIT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.INT_LIT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="INVOKE_EXP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INVOKE_EXP</h4>
+<pre>public static final&nbsp;int INVOKE_EXP</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.INVOKE_EXP">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="INVOKE_STMT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INVOKE_STMT</h4>
+<pre>public static final&nbsp;int INVOKE_STMT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.INVOKE_STMT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="LIST">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LIST</h4>
+<pre>public static final&nbsp;int LIST</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.LIST">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="LOCAL_DECL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOCAL_DECL</h4>
+<pre>public static final&nbsp;int LOCAL_DECL</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.LOCAL_DECL">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="MAIN_DECL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MAIN_DECL</h4>
+<pre>public static final&nbsp;int MAIN_DECL</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.MAIN_DECL">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="METHOD_DECL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>METHOD_DECL</h4>
+<pre>public static final&nbsp;int METHOD_DECL</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.METHOD_DECL">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="NUM_INT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NUM_INT</h4>
+<pre>public static final&nbsp;int NUM_INT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.NUM_INT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="OPTION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OPTION</h4>
+<pre>public static final&nbsp;int OPTION</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.OPTION">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PARAM">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PARAM</h4>
+<pre>public static final&nbsp;int PARAM</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.PARAM">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PAREN_EXP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PAREN_EXP</h4>
+<pre>public static final&nbsp;int PAREN_EXP</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.PAREN_EXP">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="RETURN_STMT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RETURN_STMT</h4>
+<pre>public static final&nbsp;int RETURN_STMT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.RETURN_STMT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="TRUE_LIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TRUE_LIT</h4>
+<pre>public static final&nbsp;int TRUE_LIT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.TRUE_LIT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TYPE</h4>
+<pre>public static final&nbsp;int TYPE</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.TYPE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="UNARY_EXP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UNARY_EXP</h4>
+<pre>public static final&nbsp;int UNARY_EXP</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.UNARY_EXP">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="VAR_REF_EXP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VAR_REF_EXP</h4>
+<pre>public static final&nbsp;int VAR_REF_EXP</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.VAR_REF_EXP">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="VOID">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VOID</h4>
+<pre>public static final&nbsp;int VOID</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.VOID">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="WHILE_STMT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WHILE_STMT</h4>
+<pre>public static final&nbsp;int WHILE_STMT</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.WHILE_STMT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="WS">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WS</h4>
+<pre>public static final&nbsp;int WS</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../constant-values.html#sjc.parser.StaticJavaASTAltLexer.WS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="StaticJavaASTAltLexer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StaticJavaASTAltLexer</h4>
+<pre>public&nbsp;StaticJavaASTAltLexer()</pre>
+</li>
+</ul>
+<a name="StaticJavaASTAltLexer(org.antlr.runtime.CharStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>StaticJavaASTAltLexer</h4>
+<pre>public&nbsp;StaticJavaASTAltLexer(org.antlr.runtime.CharStream&nbsp;input)</pre>
+</li>
+</ul>
+<a name="StaticJavaASTAltLexer(org.antlr.runtime.CharStream, org.antlr.runtime.RecognizerSharedState)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>StaticJavaASTAltLexer</h4>
+<pre>public&nbsp;StaticJavaASTAltLexer(org.antlr.runtime.CharStream&nbsp;input,
+                     org.antlr.runtime.RecognizerSharedState&nbsp;state)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getDelegates()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDelegates</h4>
+<pre>public&nbsp;org.antlr.runtime.Lexer[]&nbsp;getDelegates()</pre>
+</li>
+</ul>
+<a name="getGrammarFileName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGrammarFileName</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getGrammarFileName()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>getGrammarFileName</code>&nbsp;in class&nbsp;<code>org.antlr.runtime.BaseRecognizer</code></dd>
+</dl>
+</li>
+</ul>
+<a name="mT__35()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__35</h4>
+<pre>public final&nbsp;void&nbsp;mT__35()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__36()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__36</h4>
+<pre>public final&nbsp;void&nbsp;mT__36()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__37()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__37</h4>
+<pre>public final&nbsp;void&nbsp;mT__37()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__38()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__38</h4>
+<pre>public final&nbsp;void&nbsp;mT__38()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__39()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__39</h4>
+<pre>public final&nbsp;void&nbsp;mT__39()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__40()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__40</h4>
+<pre>public final&nbsp;void&nbsp;mT__40()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__41()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__41</h4>
+<pre>public final&nbsp;void&nbsp;mT__41()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__42()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__42</h4>
+<pre>public final&nbsp;void&nbsp;mT__42()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__43()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__43</h4>
+<pre>public final&nbsp;void&nbsp;mT__43()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__44()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__44</h4>
+<pre>public final&nbsp;void&nbsp;mT__44()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__45()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__45</h4>
+<pre>public final&nbsp;void&nbsp;mT__45()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__46()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__46</h4>
+<pre>public final&nbsp;void&nbsp;mT__46()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__47()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__47</h4>
+<pre>public final&nbsp;void&nbsp;mT__47()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__48()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__48</h4>
+<pre>public final&nbsp;void&nbsp;mT__48()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__49()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__49</h4>
+<pre>public final&nbsp;void&nbsp;mT__49()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__50()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__50</h4>
+<pre>public final&nbsp;void&nbsp;mT__50()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__51()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__51</h4>
+<pre>public final&nbsp;void&nbsp;mT__51()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__52()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__52</h4>
+<pre>public final&nbsp;void&nbsp;mT__52()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__53()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__53</h4>
+<pre>public final&nbsp;void&nbsp;mT__53()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__54()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__54</h4>
+<pre>public final&nbsp;void&nbsp;mT__54()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__55()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__55</h4>
+<pre>public final&nbsp;void&nbsp;mT__55()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__56()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__56</h4>
+<pre>public final&nbsp;void&nbsp;mT__56()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__57()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__57</h4>
+<pre>public final&nbsp;void&nbsp;mT__57()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__58()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__58</h4>
+<pre>public final&nbsp;void&nbsp;mT__58()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__59()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__59</h4>
+<pre>public final&nbsp;void&nbsp;mT__59()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__60()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__60</h4>
+<pre>public final&nbsp;void&nbsp;mT__60()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__61()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__61</h4>
+<pre>public final&nbsp;void&nbsp;mT__61()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__62()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__62</h4>
+<pre>public final&nbsp;void&nbsp;mT__62()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__63()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__63</h4>
+<pre>public final&nbsp;void&nbsp;mT__63()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__64()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__64</h4>
+<pre>public final&nbsp;void&nbsp;mT__64()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__65()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__65</h4>
+<pre>public final&nbsp;void&nbsp;mT__65()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__66()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__66</h4>
+<pre>public final&nbsp;void&nbsp;mT__66()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__67()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__67</h4>
+<pre>public final&nbsp;void&nbsp;mT__67()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__68()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__68</h4>
+<pre>public final&nbsp;void&nbsp;mT__68()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__69()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__69</h4>
+<pre>public final&nbsp;void&nbsp;mT__69()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mT__70()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mT__70</h4>
+<pre>public final&nbsp;void&nbsp;mT__70()
+                  throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mID</h4>
+<pre>public final&nbsp;void&nbsp;mID()
+               throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mNUM_INT()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mNUM_INT</h4>
+<pre>public final&nbsp;void&nbsp;mNUM_INT()
+                    throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mWS()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mWS</h4>
+<pre>public final&nbsp;void&nbsp;mWS()
+               throws org.antlr.runtime.RecognitionException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+<a name="mTokens()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>mTokens</h4>
+<pre>public&nbsp;void&nbsp;mTokens()
+             throws org.antlr.runtime.RecognitionException</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>mTokens</code>&nbsp;in class&nbsp;<code>org.antlr.runtime.Lexer</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>org.antlr.runtime.RecognitionException</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/StaticJavaASTAltLexer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../index-files/index-1.html">Index</a></li>
+<li><a href="../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../sjc/parser/StaticJavaAST2JDT.html" title="class in sjc.parser"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../sjc/parser/StaticJavaASTAltParser.html" title="class in sjc.parser"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../index.html?sjc/parser/StaticJavaASTAltLexer.html" target="_top">Frames</a></li>
+<li><a href="StaticJavaASTAltLexer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

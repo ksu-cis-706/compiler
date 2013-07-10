@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="antlrv3/*/__Test__*.*" kind="src" path="src-antlr"/>
+	<classpathentry kind="src" path="src-jdt"/>
+	<classpathentry kind="src" path="src-asm"/>
+	<classpathentry kind="src" path="src-sjc"/>
+	<classpathentry kind="src" path="src-esjc"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/compiler-sjc"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
