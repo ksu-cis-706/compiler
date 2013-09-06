@@ -1,7 +1,5 @@
 package sjc.test;
 
-import java.io.File;
-
 import org.antlr.runtime.ANTLRFileStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.Tree;
@@ -23,10 +21,9 @@ import sjc.symboltable.SymbolTableBuilder;
 public class SymbolTableBuilderTest {
   public static void testPass(final String filename) {
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(new File(SJC.class
-          .getResource("..").toURI()).getAbsolutePath().replace(
-          "/bin",
-          "/src/test/resources/" + filename));
+      final ANTLRFileStream afs = new ANTLRFileStream(Util.getResource(
+          SJC.class,
+          filename));
       final StaticJavaASTAltLexer sjal = new StaticJavaASTAltLexer(afs);
       final CommonTokenStream cts = new CommonTokenStream(sjal);
       final StaticJavaASTAltParser sjap = new StaticJavaASTAltParser(cts);

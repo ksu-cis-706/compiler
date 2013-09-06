@@ -1,7 +1,5 @@
 package sjc.test;
 
-import java.io.File;
-
 import org.antlr.runtime.ANTLRFileStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.junit.Assert;
@@ -31,10 +29,9 @@ public class ParserTest {
 
   public static void testPass(final String filename) {
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(new File(SJC.class
-          .getResource("..").toURI()).getAbsolutePath().replace(
-          "/bin",
-          "/src/test/resources/" + filename));
+      final ANTLRFileStream afs = new ANTLRFileStream(Util.getResource(
+          SJC.class,
+          filename));
       final StaticJavaLexer sjl = new StaticJavaLexer(afs);
       final CommonTokenStream cts = new CommonTokenStream(sjl);
       final StaticJavaParser sjp = new StaticJavaParser(cts);

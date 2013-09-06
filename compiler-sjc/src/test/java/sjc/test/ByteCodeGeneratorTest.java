@@ -1,6 +1,5 @@
 package sjc.test;
 
-import java.io.File;
 import java.io.PrintWriter;
 
 import org.antlr.runtime.ANTLRFileStream;
@@ -40,10 +39,9 @@ public class ByteCodeGeneratorTest {
   @SuppressWarnings({ "rawtypes", "unchecked" })
   public static void testPass(final String filename, final Object[] args) {
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(new File(SJC.class
-          .getResource("..").toURI()).getAbsolutePath().replace(
-          "/bin",
-          "/src/test/resources/" + filename));
+      final ANTLRFileStream afs = new ANTLRFileStream(Util.getResource(
+          SJC.class,
+          filename));
       final StaticJavaASTAltLexer sjal = new StaticJavaASTAltLexer(afs);
       final CommonTokenStream cts = new CommonTokenStream(sjal);
       final StaticJavaASTAltParser sjap = new StaticJavaASTAltParser(cts);
