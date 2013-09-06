@@ -3,8 +3,6 @@ package sjc.test;
 import java.io.File;
 import java.net.URI;
 
-import sjc.SJC;
-
 /**
  * Provides utility methods.
  * 
@@ -18,8 +16,7 @@ public class Util {
 
   public static String getResource(final Class<?> c, final String relpath,
       final String filename) throws Exception {
-    return new File(new URI(SJC.class.getResource(relpath).toURI()
-        .toASCIIString().replace("/bin", "/src/test/resources/" + filename)))
-        .getAbsolutePath();
+    return new File(new URI(c.getResource(relpath).toURI().toASCIIString()
+        .replace("/bin", "/src/test/resources/" + filename))).getAbsolutePath();
   }
 }
