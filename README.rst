@@ -1,5 +1,5 @@
-Compiler (http://compiler.santoslab.org)
-========================================
+Compiler
+========
 
 Setting Up Development Environment
 ----------------------------------
