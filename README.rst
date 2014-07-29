@@ -10,7 +10,7 @@ Setting Up Development Environment
    (Alternatively, you can install the compiler tools listed at:
    http://compiler.santoslab.org/tools) 
 
-2. Launch `Compiler Development Environment (DE) <http://www.sireum.org/features>`_ 
+2. Launch `Compiler Development Environment (DE) <http://www.sireum.org/features.html>`_ 
    (add ``-h`` for help to supply custom Eclipse command-line arguments such
    as configuring memory)::
 
