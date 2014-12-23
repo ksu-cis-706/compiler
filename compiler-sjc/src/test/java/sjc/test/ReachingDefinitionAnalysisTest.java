@@ -1,8 +1,5 @@
 package sjc.test;
 
-import org.antlr.runtime.ANTLRFileStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.tree.Tree;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
@@ -12,30 +9,21 @@ import org.junit.Test;
 import sjc.SJC;
 import sjc.analysis.CFG;
 import sjc.analysis.ReachingDefinitionAnalysis;
-import sjc.parser.StaticJavaAST2JDT;
-import sjc.parser.StaticJavaASTAltLexer;
-import sjc.parser.StaticJavaASTAltParser;
+import sjc.parser.ParserUtil;
 import sjc.symboltable.SymbolTable;
 import sjc.symboltable.SymbolTableBuilder;
 
 /**
  * Test cases for {@link ReachingDefinitionAnalysis}.
- * 
+ *
  * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
  */
 public class ReachingDefinitionAnalysisTest {
   public static void testPass(final String filename) {
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(Util.getResource(
+      final CompilationUnit cu = ParserUtil.ast(Util.getResource(
           SJC.class,
           filename));
-      final StaticJavaASTAltLexer sjal = new StaticJavaASTAltLexer(afs);
-      final CommonTokenStream cts = new CommonTokenStream(sjal);
-      final StaticJavaASTAltParser sjap = new StaticJavaASTAltParser(cts);
-      final Tree cuTree = (Tree) sjap.compilationUnit().getTree();
-      final CompilationUnit cu = StaticJavaAST2JDT.builds(
-          cuTree,
-          CompilationUnit.class);
       final SymbolTable st = SymbolTableBuilder.build(cu);
       for (final Object o : cu.types()) {
         if (o instanceof TypeDeclaration) {

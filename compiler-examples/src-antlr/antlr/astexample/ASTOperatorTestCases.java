@@ -13,7 +13,7 @@ public class ASTOperatorTestCases {
       final ASTRewriteLexer astopl = new ASTRewriteLexer(ss);
       final CommonTokenStream cts = new CommonTokenStream(astopl);
       final ASTRewriteParser astopp = new ASTRewriteParser(cts);
-      astopp.start();
+      astopp.expr();
     } catch (final Exception e) {
       e.printStackTrace();
       Assert.assertTrue(false);

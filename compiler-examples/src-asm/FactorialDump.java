@@ -1,5 +1,6 @@
 import java.io.PrintWriter;
 
+import org.junit.Test;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Label;
@@ -8,7 +9,7 @@ import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.util.TraceClassVisitor;
 
 public class FactorialDump
-    implements Opcodes {
+implements Opcodes {
   public static byte[] dump() throws Exception {
     final ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
     MethodVisitor mv;
@@ -155,7 +156,8 @@ public class FactorialDump
     return cw.toByteArray();
   }
 
-  public static void main(final String[] args) throws Exception {
+  @Test
+  public void dumpFactorial() throws Exception {
     final byte[] factorialClass = FactorialDump.dump();
     final ClassReader cr = new ClassReader(factorialClass);
     final TraceClassVisitor tcv = new TraceClassVisitor(new PrintWriter(

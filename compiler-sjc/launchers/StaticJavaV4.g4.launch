@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.github.jknack.Antlr4.tool">
+<stringAttribute key="antlr4.arguments" value="-o /Users/robby/Repositories/compiler/compiler-sjc/src/main/java/sjc/parser -no-listener -visitor -package sjc.parser -encoding UTF-8"/>
+<stringAttribute key="antlr4.grammar" value="/compiler-sjc/src/main/java/sjc/parser/StaticJavaV4.g4"/>
+<stringAttribute key="antlr4.vmArguments" value=""/>
+</launchConfiguration>

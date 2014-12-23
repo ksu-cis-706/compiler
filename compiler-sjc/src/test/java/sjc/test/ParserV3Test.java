@@ -5,16 +5,16 @@ import org.junit.Test;
 
 import sjc.SJC;
 import sjc.parser.ParserUtil;
-import sjc.parser.StaticJavaV4Parser;
+import sjc.parser.StaticJavaParser;
 
 /**
- * Test cases for {@link StaticJavaV4Parser}.
+ * Test cases for {@link StaticJavaParser}.
  *
  * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
  */
-public class ParserTest {
+public class ParserV3Test {
   private static void parse(final String filename) throws Exception {
-    ParserUtil.parse(Util.getResource(SJC.class, filename));
+    ParserUtil.parseV3(Util.getResource(SJC.class, filename));
   }
 
   private static void testFail(final String filename) {
@@ -36,16 +36,16 @@ public class ParserTest {
 
   @Test
   public void testFactorial() {
-    ParserTest.testPass("Factorial.java");
+    ParserV3Test.testPass("Factorial.java");
   }
 
   @Test
   public void testParseErrorPass() {
-    ParserTest.testFail("ParseError.java");
+    ParserV3Test.testFail("ParseError.java");
   }
 
   @Test
   public void testPower() {
-    ParserTest.testPass("Power.java");
+    ParserV3Test.testPass("Power.java");
   }
 }

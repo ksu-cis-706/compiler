@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.github.jknack.Antlr4.tool">
+<stringAttribute key="antlr4.arguments" value="-o /Users/robby/Repositories/compiler/compiler-examples/src-antlr/antlr/v4/example1 -no-listener -visitor -encoding UTF-8 -package antlr.v4.example1"/>
+<stringAttribute key="antlr4.grammar" value="/compiler-examples/src-antlr/antlr/v4/example1/ExpSimple.g4"/>
+<stringAttribute key="antlr4.vmArguments" value=""/>
+</launchConfiguration>

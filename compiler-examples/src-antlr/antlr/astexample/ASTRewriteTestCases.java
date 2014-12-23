@@ -10,10 +10,10 @@ public class ASTRewriteTestCases {
     System.out.println("*** ASTOperator (" + testName + ") ***");
     try {
       final ANTLRStringStream ss = new ANTLRStringStream(input);
-      final ASTOperatorLexer astopl = new ASTOperatorLexer(ss);
+      final ASTRewriteLexer astopl = new ASTRewriteLexer(ss);
       final CommonTokenStream cts = new CommonTokenStream(astopl);
-      final ASTOperatorParser astopp = new ASTOperatorParser(cts);
-      astopp.start();
+      final ASTRewriteParser astopp = new ASTRewriteParser(cts);
+      astopp.expr();
     } catch (final Exception e) {
       e.printStackTrace();
       Assert.assertTrue(false);

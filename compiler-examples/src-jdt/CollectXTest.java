@@ -1,24 +1,16 @@
-import junit.framework.TestCase;
-
-import org.antlr.runtime.ANTLRFileStream;
-import org.antlr.runtime.CommonTokenStream;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.junit.Assert;
+import org.junit.Test;
 
-import sjc.parser.StaticJavaASTLexer;
-import sjc.parser.StaticJavaASTParser;
+import sjc.parser.ParserUtil;
 
 /**
  * Test cases for {@link CollectInt}.
  */
-public class CollectXTest extends TestCase {
+public class CollectXTest {
   public static void testPass(final String filename) {
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(filename);
-      final StaticJavaASTLexer sjal = new StaticJavaASTLexer(afs);
-      final CommonTokenStream cts = new CommonTokenStream(sjal);
-      final StaticJavaASTParser sjap = new StaticJavaASTParser(cts);
-      final CompilationUnit cu = sjap.compilationUnit();
+      final CompilationUnit cu = ParserUtil.ast(filename);
       System.out.print("Integer Literals:");
       System.out.println(CollectInt.collect(cu));
       System.out.flush();
@@ -31,10 +23,12 @@ public class CollectXTest extends TestCase {
     }
   }
 
+  @Test
   public void testFactorial() {
     CollectXTest.testPass("src-sjc/Factorial.java");
   }
 
+  @Test
   public void testPower() {
     CollectXTest.testPass("src-sjc/Power.java");
   }
