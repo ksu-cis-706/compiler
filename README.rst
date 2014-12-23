@@ -4,19 +4,25 @@ Compiler
 Setting Up Development Environment
 ----------------------------------
 
-1. Download and install Sireum by following the instructions at: 
+1. Download and install Sireum (stable, 64-bit) by following the instructions at: 
    http://www.sireum.org/download.
    
    (Alternatively, you can install the compiler tools listed at:
    http://compiler.santoslab.org/tools) 
 
-2. Launch `Compiler Development Environment (DE) <http://www.sireum.org/features.html>`_ 
+2. Launch `Eclipse in Sireum <http://www.sireum.org/features.html>`_ 
    (add ``-h`` for help to supply custom Eclipse command-line arguments such
-   as configuring memory)::
+   as configuring memory; the default memory configuration is for 1GB max heap
+   space)::
 
        sireum launch eclipse
 
    Pick a directory for your workspace when asked.
+   
+   If you plan to use Scala to work on your projects, launch the
+   Sireum Development Environment instead (with at least 2GB heap space)::
+   
+       sireum launch sireumdev -j "-Xms512m,-Xmx2048m"
 
 3. Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
    `Java Installed JREs preference page <http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
