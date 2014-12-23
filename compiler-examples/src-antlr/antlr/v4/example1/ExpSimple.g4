@@ -5,8 +5,8 @@ start: exp EOF;
 exp
   : INT
   | '(' exp ')'
-  | exp op=( '*' | '/' | '%' ) exp
-  | exp op=( '+' | '-' )       exp
+  | exp ( '*' | '/' | '%' ) exp
+  | exp ( '+' | '-' )       exp
   ;
 
 INT

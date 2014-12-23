@@ -85,7 +85,6 @@ public class ExpSimpleParser extends Parser {
 	}
 
 	public static class ExpContext extends ParserRuleContext {
-		public Token op;
 		public List<ExpContext> exp() {
 			return getRuleContexts(ExpContext.class);
 		}
@@ -155,10 +154,9 @@ public class ExpSimpleParser extends Parser {
 						setState(15);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
 						setState(16);
-						((ExpContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__5) | (1L << T__2))) != 0)) ) {
-							((ExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
+						_errHandler.recoverInline(this);
 						}
 						consume();
 						setState(17); exp(3);
@@ -171,10 +169,9 @@ public class ExpSimpleParser extends Parser {
 						setState(18);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
 						setState(19);
-						((ExpContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !(_la==T__1 || _la==T__0) ) {
-							((ExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
+						_errHandler.recoverInline(this);
 						}
 						consume();
 						setState(20); exp(2);
