@@ -423,7 +423,7 @@ public class StaticJavaASTBuilder extends StaticJavaV4BaseVisitor<ASTNode> {
 
   @Override
   public BooleanLiteral visitTrueLiteral(final TrueLiteralContext ctx) {
-    return this.ast.newBooleanLiteral(false);
+    return this.ast.newBooleanLiteral(true);
   }
 
   @Override
