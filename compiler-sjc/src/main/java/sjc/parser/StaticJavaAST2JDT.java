@@ -92,7 +92,7 @@ public class StaticJavaAST2JDT extends StaticJavaASTAltTreeVisitor<Object> {
     return v.pop(c);
   }
 
-  protected AST ast = AST.newAST(AST.JLS4);
+  protected AST ast = AST.newAST(AST.JLS8);
 
   ASTNode vresult = null;
 

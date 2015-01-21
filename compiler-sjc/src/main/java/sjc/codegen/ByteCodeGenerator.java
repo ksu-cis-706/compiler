@@ -20,6 +20,7 @@ import org.eclipse.jdt.core.dom.InfixExpression;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.Modifier;
+import org.eclipse.jdt.core.dom.Modifier.ModifierKeyword;
 import org.eclipse.jdt.core.dom.NumberLiteral;
 import org.eclipse.jdt.core.dom.PrefixExpression;
 import org.eclipse.jdt.core.dom.ReturnStatement;
@@ -30,7 +31,6 @@ import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
-import org.eclipse.jdt.core.dom.Modifier.ModifierKeyword;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Label;
@@ -56,14 +56,14 @@ import sjc.util.Pair;
 /**
  * This class is used to translate a StaticJava {@link CompilationUnit} to
  * {@link ClassByteCodes} that represent a Java 1.5 class files.
- * 
+ *
  * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
  */
 public class ByteCodeGenerator {
   /**
    * This class is used to signal an error in the process of generating
    * bytecode. It contains the {@link ASTNode} that causes the error.
-   * 
+   *
    * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
    */
   public static class Error extends RuntimeException {
@@ -72,13 +72,11 @@ public class ByteCodeGenerator {
     /**
      * Holds the {@link ASTNode} that causes this error.
      */
-    public final @NonNull
-    @ReadOnly
-    ASTNode node;
+    public final @NonNull @ReadOnly ASTNode node;
 
     /**
      * Constructs an error of bytecode generation.
-     * 
+     *
      * @param node
      *          The {@link ASTNode} that causes this error.
      * @param msg
@@ -93,44 +91,29 @@ public class ByteCodeGenerator {
 
   /**
    * The visitor for {@link ASTNode} to generate bytecodes.
-   * 
+   *
    * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
    */
   protected static class Visitor extends ASTVisitor {
-    protected @NonNull
-    ClassWriter cw;
+    protected @NonNull ClassWriter cw;
 
-    protected @PossiblyNull
-    FieldVisitor fv;
+    protected @PossiblyNull FieldVisitor fv;
 
-    protected @PossiblyNull
-    MethodVisitor mv;
+    protected @PossiblyNull MethodVisitor mv;
 
-    public @PossiblyNull
-    String mainClassName;
+    public @PossiblyNull String mainClassName;
 
-    public @PossiblyNull
-    byte[] mainClassBytes;
+    public @PossiblyNull byte[] mainClassBytes;
 
-    protected @NonNullElements
-    @ReadOnlyElements
-    Map<ASTNode, Object> symbolMap;
+    protected @NonNullElements @ReadOnlyElements Map<ASTNode, Object> symbolMap;
 
-    protected @NonNullElements
-    @ReadOnlyElements
-    Map<ASTNode, Type> typeMap;
+    protected @NonNullElements @ReadOnlyElements Map<ASTNode, Type> typeMap;
 
-    protected @NonNullElements
-    @ReadOnlyElements
-    Map<Object, Pair<Type, List<Type>>> methodTypeMap;
+    protected @NonNullElements @ReadOnlyElements Map<Object, Pair<Type, List<Type>>> methodTypeMap;
 
-    protected @NonNull
-    @NonNullElementsOnly
-    List<Pair<String, Type>> localNamesTypes = new ArrayList<Pair<String, Type>>();
+    protected @NonNull @NonNullElementsOnly List<Pair<String, Type>> localNamesTypes = new ArrayList<Pair<String, Type>>();
 
-    protected @NonNull
-    @NonNullElementsOnly
-    Map<String, Integer> localIndexMap = new HashMap<String, Integer>();
+    protected @NonNull @NonNullElementsOnly Map<String, Integer> localIndexMap = new HashMap<String, Integer>();
 
     protected Visitor(@NonNull final SymbolTable st, @NonNull final TypeTable tt) {
       assert (st != null) && (tt != null);
@@ -223,12 +206,13 @@ public class ByteCodeGenerator {
           Opcodes.INVOKESPECIAL,
           "java/lang/Object",
           "<init>",
-          "()V");
+          "()V",
+          false);
       this.mv.visitInsn(Opcodes.RETURN);
       final Label l1 = new Label();
       this.mv.visitLabel(l1);
       this.mv
-          .visitLocalVariable("this", "L" + className + ";", null, l0, l1, 0);
+      .visitLocalVariable("this", "L" + className + ";", null, l0, l1, 0);
       this.mv.visitMaxs(1, 1);
       this.mv.visitEnd();
     }
@@ -491,7 +475,8 @@ public class ByteCodeGenerator {
             Opcodes.INVOKESTATIC,
             className,
             methodName,
-            getMethodDescriptor(p.first, p.second));
+            getMethodDescriptor(p.first, p.second),
+            false);
       } else if (o instanceof Method) {
         final Method m = (Method) o;
         final String className = m.getDeclaringClass().getName()
@@ -502,7 +487,8 @@ public class ByteCodeGenerator {
             Opcodes.INVOKESTATIC,
             className,
             methodName,
-            getMethodDescriptor(p.first, p.second));
+            getMethodDescriptor(p.first, p.second),
+            false);
       }
       return false;
     }
@@ -616,7 +602,7 @@ public class ByteCodeGenerator {
    * Generates a {@link ClassByteCodes} that represents the class files for the
    * given StaticJava {@link CompilationUnit} with the given {@link SymbolTable}
    * and {@link TypeTable}.
-   * 
+   *
    * @param cu
    *          The StaticJava {@link CompilationUnit}.
    * @param st
@@ -629,10 +615,9 @@ public class ByteCodeGenerator {
    * @throws ByteCodeGenerator.Error
    *           If the generator encounter unexpected error.
    */
-  public static @NonNull
-  ClassByteCodes generate(@NonNull final CompilationUnit cu,
-      @NonNull final SymbolTable st, @NonNull final TypeTable tt)
-      throws ByteCodeGenerator.Error {
+  public static @NonNull ClassByteCodes generate(
+      @NonNull final CompilationUnit cu, @NonNull final SymbolTable st,
+      @NonNull final TypeTable tt) throws ByteCodeGenerator.Error {
     assert (cu != null) && (st != null) && (tt != null);
 
     final Visitor v = new Visitor(st, tt);
