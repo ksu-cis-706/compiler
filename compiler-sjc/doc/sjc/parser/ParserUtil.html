@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -110,8 +110,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">ParserUtil</span>
 extends java.lang.Object</pre>
-<div class="block">This class provides helper methods to call StaticJava ANTLR v3 and v4
- parsers.</div>
+<div class="block">This class provides a helper method to call the StaticJava ANTLR v4 parser.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd><a href="mailto:robby@cis.ksu.edu">Robby</a></dd>
@@ -152,35 +151,9 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static CompilationUnit</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/ParserUtil.html#ast-java.lang.String-">ast</a></span>(java.lang.String&nbsp;path)</code>
-<div class="block">Builds JDT AST using the StaticJavaV4 parser and
- <a href="../../sjc/parser/StaticJavaASTBuilder.html" title="class in sjc.parser"><code>StaticJavaASTBuilder</code></a>.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../sjc/parser/StaticJavaV4Parser.CompilationUnitContext.html" title="class in sjc.parser">StaticJavaV4Parser.CompilationUnitContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/ParserUtil.html#parse-java.lang.String-">parse</a></span>(java.lang.String&nbsp;path)</code>
 <div class="block">Builds parse tree using the StaticJavaV4 parser.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static CompilationUnit</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/ParserUtil.html#parseASTAltV3-java.lang.String-">parseASTAltV3</a></span>(java.lang.String&nbsp;path)</code>
-<div class="block">Builds JDT AST using the StaticJavaASTAlt parser and
- <a href="../../sjc/parser/StaticJavaAST2JDT.html" title="class in sjc.parser"><code>StaticJavaAST2JDT</code></a>.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static CompilationUnit</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/ParserUtil.html#parseASTV3-java.lang.String-">parseASTV3</a></span>(java.lang.String&nbsp;path)</code>
-<div class="block">Builds JDT AST using the StaticJavaAST parser.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/ParserUtil.html#parseV3-java.lang.String-">parseV3</a></span>(java.lang.String&nbsp;path)</code>
-<div class="block">Parses using the StaticJava parser.</div>
 </td>
 </tr>
 </table>
@@ -222,31 +195,10 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="ast-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ast</h4>
-<pre>public static&nbsp;CompilationUnit&nbsp;ast(java.lang.String&nbsp;path)
-                           throws java.lang.Exception</pre>
-<div class="block">Builds JDT AST using the StaticJavaV4 parser and
- <a href="../../sjc/parser/StaticJavaASTBuilder.html" title="class in sjc.parser"><code>StaticJavaASTBuilder</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>path</code> - The path for the input file to parse.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The JDT compilation unit for the input file.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - When an error occurred when parsing (e.g., file not found, I/O
-           error, and parsing error).</dd>
-</dl>
-</li>
-</ul>
 <a name="parse-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>parse</h4>
 <pre>public static&nbsp;<a href="../../sjc/parser/StaticJavaV4Parser.CompilationUnitContext.html" title="class in sjc.parser">StaticJavaV4Parser.CompilationUnitContext</a>&nbsp;parse(java.lang.String&nbsp;path)
@@ -257,65 +209,6 @@ extends java.lang.Object</pre>
 <dd><code>path</code> - The path for the input file to parse.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The ANTLR4 parse tree for the input file.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - When an error occurred when parsing (e.g., file not found, I/O
-           error, and parsing error).</dd>
-</dl>
-</li>
-</ul>
-<a name="parseASTAltV3-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>parseASTAltV3</h4>
-<pre>public static&nbsp;CompilationUnit&nbsp;parseASTAltV3(java.lang.String&nbsp;path)
-                                     throws java.lang.Exception</pre>
-<div class="block">Builds JDT AST using the StaticJavaASTAlt parser and
- <a href="../../sjc/parser/StaticJavaAST2JDT.html" title="class in sjc.parser"><code>StaticJavaAST2JDT</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>path</code> - The path for the input file to parse.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The JDT compilation unit for the input file.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - When an error occurred when parsing (e.g., file not found, I/O
-           error, and parsing error).</dd>
-</dl>
-</li>
-</ul>
-<a name="parseASTV3-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>parseASTV3</h4>
-<pre>public static&nbsp;CompilationUnit&nbsp;parseASTV3(java.lang.String&nbsp;path)
-                                  throws java.lang.Exception</pre>
-<div class="block">Builds JDT AST using the StaticJavaAST parser.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>path</code> - The path for the input file to parse.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The JDT compilation unit for the input file.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - When an error occurred when parsing (e.g., file not found, I/O
-           error, and parsing error).</dd>
-</dl>
-</li>
-</ul>
-<a name="parseV3-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>parseV3</h4>
-<pre>public static&nbsp;void&nbsp;parseV3(java.lang.String&nbsp;path)
-                    throws java.lang.Exception</pre>
-<div class="block">Parses using the StaticJava parser.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>path</code> - The path for the input file to parse.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code> - When an error occurred when parsing (e.g., file not found, I/O
            error, and parsing error).</dd>

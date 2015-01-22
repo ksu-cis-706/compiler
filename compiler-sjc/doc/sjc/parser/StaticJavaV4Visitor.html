@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../sjc/parser/StaticJavaASTBuilder.html" title="class in sjc.parser">StaticJavaASTBuilder</a>, <a href="../../sjc/parser/StaticJavaV4BaseVisitor.html" title="class in sjc.parser">StaticJavaV4BaseVisitor</a></dd>
+<dd><a href="../../sjc/parser/StaticJavaV4BaseVisitor.html" title="class in sjc.parser">StaticJavaV4BaseVisitor</a></dd>
 </dl>
 <hr>
 <br>
@@ -241,83 +241,89 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitMemberDeclaration-sjc.parser.StaticJavaV4Parser.MemberDeclarationContext-">visitMemberDeclaration</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.MemberDeclarationContext.html" title="class in sjc.parser">StaticJavaV4Parser.MemberDeclarationContext</a>&nbsp;ctx)</code>
+<div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#memberDeclaration--"><code>StaticJavaV4Parser.memberDeclaration()</code></a>.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitMethodBody-sjc.parser.StaticJavaV4Parser.MethodBodyContext-">visitMethodBody</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.MethodBodyContext.html" title="class in sjc.parser">StaticJavaV4Parser.MethodBodyContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#methodBody--"><code>StaticJavaV4Parser.methodBody()</code></a>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitMethodDeclaration-sjc.parser.StaticJavaV4Parser.MethodDeclarationContext-">visitMethodDeclaration</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.MethodDeclarationContext.html" title="class in sjc.parser">StaticJavaV4Parser.MethodDeclarationContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#methodDeclaration--"><code>StaticJavaV4Parser.methodDeclaration()</code></a>.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitNonVoidReturnType-sjc.parser.StaticJavaV4Parser.NonVoidReturnTypeContext-">visitNonVoidReturnType</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.NonVoidReturnTypeContext.html" title="class in sjc.parser">StaticJavaV4Parser.NonVoidReturnTypeContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>NonVoidReturnType</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#returnType--"><code>StaticJavaV4Parser.returnType()</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitNullLiteral-sjc.parser.StaticJavaV4Parser.NullLiteralContext-">visitNullLiteral</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.NullLiteralContext.html" title="class in sjc.parser">StaticJavaV4Parser.NullLiteralContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>NullLiteral</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#exp--"><code>StaticJavaV4Parser.exp()</code></a>.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitParam-sjc.parser.StaticJavaV4Parser.ParamContext-">visitParam</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.ParamContext.html" title="class in sjc.parser">StaticJavaV4Parser.ParamContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#param--"><code>StaticJavaV4Parser.param()</code></a>.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitParams-sjc.parser.StaticJavaV4Parser.ParamsContext-">visitParams</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.ParamsContext.html" title="class in sjc.parser">StaticJavaV4Parser.ParamsContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#params--"><code>StaticJavaV4Parser.params()</code></a>.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitParenExp-sjc.parser.StaticJavaV4Parser.ParenExpContext-">visitParenExp</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.ParenExpContext.html" title="class in sjc.parser">StaticJavaV4Parser.ParenExpContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>ParenExp</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#exp--"><code>StaticJavaV4Parser.exp()</code></a>.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitReturnStatement-sjc.parser.StaticJavaV4Parser.ReturnStatementContext-">visitReturnStatement</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.ReturnStatementContext.html" title="class in sjc.parser">StaticJavaV4Parser.ReturnStatementContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#returnStatement--"><code>StaticJavaV4Parser.returnStatement()</code></a>.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitStatement-sjc.parser.StaticJavaV4Parser.StatementContext-">visitStatement</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.StatementContext.html" title="class in sjc.parser">StaticJavaV4Parser.StatementContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#statement--"><code>StaticJavaV4Parser.statement()</code></a>.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitTrueLiteral-sjc.parser.StaticJavaV4Parser.TrueLiteralContext-">visitTrueLiteral</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.TrueLiteralContext.html" title="class in sjc.parser">StaticJavaV4Parser.TrueLiteralContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>TrueLiteral</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#exp--"><code>StaticJavaV4Parser.exp()</code></a>.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitUnaryExp-sjc.parser.StaticJavaV4Parser.UnaryExpContext-">visitUnaryExp</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.UnaryExpContext.html" title="class in sjc.parser">StaticJavaV4Parser.UnaryExpContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>UnaryExp</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#exp--"><code>StaticJavaV4Parser.exp()</code></a>.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitVoidType-sjc.parser.StaticJavaV4Parser.VoidTypeContext-">visitVoidType</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.VoidTypeContext.html" title="class in sjc.parser">StaticJavaV4Parser.VoidTypeContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by the <code>VoidType</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#returnType--"><code>StaticJavaV4Parser.returnType()</code></a>.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../sjc/parser/StaticJavaV4Visitor.html#visitWhileStatement-sjc.parser.StaticJavaV4Parser.WhileStatementContext-">visitWhileStatement</a></span>(<a href="../../sjc/parser/StaticJavaV4Parser.WhileStatementContext.html" title="class in sjc.parser">StaticJavaV4Parser.WhileStatementContext</a>&nbsp;ctx)</code>
 <div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#whileStatement--"><code>StaticJavaV4Parser.whileStatement()</code></a>.</div>
@@ -347,6 +353,22 @@ var activeTableTab = "activeTableTab";
 <pre><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a>&nbsp;visitVoidType(<a href="../../sjc/parser/StaticJavaV4Parser.VoidTypeContext.html" title="class in sjc.parser">StaticJavaV4Parser.VoidTypeContext</a>&nbsp;ctx)</pre>
 <div class="block">Visit a parse tree produced by the <code>VoidType</code>
  labeled alternative in <a href="../../sjc/parser/StaticJavaV4Parser.html#returnType--"><code>StaticJavaV4Parser.returnType()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a name="visitMemberDeclaration-sjc.parser.StaticJavaV4Parser.MemberDeclarationContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitMemberDeclaration</h4>
+<pre><a href="../../sjc/parser/StaticJavaV4Visitor.html" title="type parameter in StaticJavaV4Visitor">T</a>&nbsp;visitMemberDeclaration(<a href="../../sjc/parser/StaticJavaV4Parser.MemberDeclarationContext.html" title="class in sjc.parser">StaticJavaV4Parser.MemberDeclarationContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="../../sjc/parser/StaticJavaV4Parser.html#memberDeclaration--"><code>StaticJavaV4Parser.memberDeclaration()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
