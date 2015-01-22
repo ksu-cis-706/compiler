@@ -19,6 +19,12 @@ public interface StaticJavaV4Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVoidType(@NotNull StaticJavaV4Parser.VoidTypeContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link StaticJavaV4Parser#memberDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMemberDeclaration(@NotNull StaticJavaV4Parser.MemberDeclarationContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link StaticJavaV4Parser#methodDeclaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

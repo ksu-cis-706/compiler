@@ -7,8 +7,12 @@ compilationUnit
 classDefinition
   : 'public' 'class' ID '{' 
     mainMethodDeclaration
-    ( fieldDeclaration | methodDeclaration )*
+    memberDeclaration*
     '}'
+  ;
+  
+memberDeclaration
+  : fieldDeclaration | methodDeclaration
   ;
 
 mainMethodDeclaration

@@ -4,15 +4,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import org.antlr.runtime.ANTLRFileStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.RecognitionException;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
+import sjc.ast.ASTUtil;
 import sjc.codegen.ByteCodeGenerator;
 import sjc.codegen.ClassByteCodes;
-import sjc.parser.StaticJavaASTLexer;
-import sjc.parser.StaticJavaASTParser;
 import sjc.symboltable.SymbolTable;
 import sjc.symboltable.SymbolTableBuilder;
 import sjc.type.TypeFactory;
@@ -22,7 +18,7 @@ import sjc.type.checker.TypeTable;
 /**
  * This class is the main class of the StaticJava compiler; it provides a
  * command-line interface (CLI) for the compiler.
- * 
+ *
  * @author <a href="mailto:robby@cis.ksu.edu">Robby</a>
  */
 public class SJC {
@@ -47,11 +43,8 @@ public class SJC {
     String classFilename = "??";
 
     try {
-      final ANTLRFileStream afs = new ANTLRFileStream(filename);
-      final StaticJavaASTLexer sjal = new StaticJavaASTLexer(afs);
-      final CommonTokenStream cts = new CommonTokenStream(sjal);
-      final StaticJavaASTParser sjap = new StaticJavaASTParser(cts);
-      final CompilationUnit cu = sjap.compilationUnit();
+
+      final CompilationUnit cu = ASTUtil.ast(filename);
       final SymbolTable st = SymbolTableBuilder.build(cu);
       final TypeTable tt = TypeChecker.check(new TypeFactory(), cu, st);
       final ClassByteCodes cbc = ByteCodeGenerator.generate(cu, st, tt);
@@ -70,7 +63,7 @@ public class SJC {
     } catch (final IOException e) {
       System.out.println("Unable to access file \'" + classFilename + "\'");
       System.out.flush();
-    } catch (final RecognitionException re) {
+    } catch (final Exception re) {
       System.out.println("Parse error: " + re.getMessage());
     }
   }

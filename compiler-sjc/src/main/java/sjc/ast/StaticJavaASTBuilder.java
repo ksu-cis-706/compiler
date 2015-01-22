@@ -1,4 +1,4 @@
-package sjc.parser;
+package sjc.ast;
 
 import java.util.HashMap;
 import java.util.List;
@@ -32,6 +32,7 @@ import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
 
+import sjc.parser.StaticJavaV4BaseVisitor;
 import sjc.parser.StaticJavaV4Parser.ArgsContext;
 import sjc.parser.StaticJavaV4Parser.AssignStatementContext;
 import sjc.parser.StaticJavaV4Parser.BinaryExpContext;
@@ -50,6 +51,7 @@ import sjc.parser.StaticJavaV4Parser.InvokeExpContext;
 import sjc.parser.StaticJavaV4Parser.InvokeExpStatementContext;
 import sjc.parser.StaticJavaV4Parser.LocalDeclarationContext;
 import sjc.parser.StaticJavaV4Parser.MainMethodDeclarationContext;
+import sjc.parser.StaticJavaV4Parser.MemberDeclarationContext;
 import sjc.parser.StaticJavaV4Parser.MethodBodyContext;
 import sjc.parser.StaticJavaV4Parser.MethodDeclarationContext;
 import sjc.parser.StaticJavaV4Parser.NonVoidReturnTypeContext;
@@ -72,7 +74,7 @@ import sjc.parser.StaticJavaV4Parser.WhileStatementContext;
  */
 public class StaticJavaASTBuilder extends StaticJavaV4BaseVisitor<ASTNode> {
 
-  public static CompilationUnit ast(final CompilationUnitContext ctx) {
+  static CompilationUnit ast(final CompilationUnitContext ctx) {
     final StaticJavaASTBuilder builder = new StaticJavaASTBuilder();
     return builder.<CompilationUnit> build(ctx);
   }
@@ -91,7 +93,7 @@ public class StaticJavaASTBuilder extends StaticJavaV4BaseVisitor<ASTNode> {
         InfixExpression.Operator.CONDITIONAL_AND);
     StaticJavaASTBuilder.binopMap.put("==", InfixExpression.Operator.EQUALS);
     StaticJavaASTBuilder.binopMap
-        .put("!=", InfixExpression.Operator.NOT_EQUALS);
+    .put("!=", InfixExpression.Operator.NOT_EQUALS);
     StaticJavaASTBuilder.binopMap.put("==", InfixExpression.Operator.EQUALS);
     StaticJavaASTBuilder.binopMap.put("<", InfixExpression.Operator.LESS);
     StaticJavaASTBuilder.binopMap.put(">", InfixExpression.Operator.GREATER);
@@ -181,16 +183,10 @@ public class StaticJavaASTBuilder extends StaticJavaV4BaseVisitor<ASTNode> {
         result.bodyDeclarations(),
         this.<MethodDeclaration> build(ctx.mainMethodDeclaration()));
 
-    final List<FieldDeclarationContext> fieldDeclarations = ctx
-        .fieldDeclaration();
-    if (fieldDeclarations != null) {
-      builds(result.bodyDeclarations(), fieldDeclarations);
-    }
-
-    final List<MethodDeclarationContext> methodDeclarations = ctx
-        .methodDeclaration();
-    if (methodDeclarations != null) {
-      builds(result.bodyDeclarations(), methodDeclarations);
+    final List<MemberDeclarationContext> memberDeclarations = ctx
+        .memberDeclaration();
+    if (memberDeclarations != null) {
+      builds(result.bodyDeclarations(), memberDeclarations);
     }
 
     return result;

@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import sjc.SJC;
-import sjc.parser.ParserUtil;
-import sjc.parser.StaticJavaASTBuilder;
+import sjc.ast.ASTUtil;
+import sjc.ast.StaticJavaASTBuilder;
 
 /**
  * Test cases for {@link StaticJavaASTBuilder}.
@@ -15,7 +15,7 @@ import sjc.parser.StaticJavaASTBuilder;
 public class ASTBuilderTest {
   public static void testPass(final String filename) {
     try {
-      System.out.println(ParserUtil.ast(Util.getResource(SJC.class, filename)));
+      System.out.println(ASTUtil.ast(Util.getResource(SJC.class, filename)));
       System.out.flush();
 
     } catch (final Exception e) {

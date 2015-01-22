@@ -9,7 +9,7 @@ import org.junit.Test;
 import sjc.SJC;
 import sjc.analysis.CFG;
 import sjc.analysis.ReachingDefinitionAnalysis;
-import sjc.parser.ParserUtil;
+import sjc.ast.ASTUtil;
 import sjc.symboltable.SymbolTable;
 import sjc.symboltable.SymbolTableBuilder;
 
@@ -21,7 +21,7 @@ import sjc.symboltable.SymbolTableBuilder;
 public class ReachingDefinitionAnalysisTest {
   public static void testPass(final String filename) {
     try {
-      final CompilationUnit cu = ParserUtil.ast(Util.getResource(
+      final CompilationUnit cu = ASTUtil.ast(Util.getResource(
           SJC.class,
           filename));
       final SymbolTable st = SymbolTableBuilder.build(cu);

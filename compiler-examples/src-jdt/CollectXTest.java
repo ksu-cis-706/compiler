@@ -2,7 +2,7 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.junit.Assert;
 import org.junit.Test;
 
-import sjc.parser.ParserUtil;
+import sjc.ast.ASTUtil;
 
 /**
  * Test cases for {@link CollectInt}.
@@ -10,7 +10,7 @@ import sjc.parser.ParserUtil;
 public class CollectXTest {
   public static void testPass(final String filename) {
     try {
-      final CompilationUnit cu = ParserUtil.ast(filename);
+      final CompilationUnit cu = ASTUtil.ast(filename);
       System.out.print("Integer Literals:");
       System.out.println(CollectInt.collect(cu));
       System.out.flush();

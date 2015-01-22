@@ -9,9 +9,9 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.util.TraceClassVisitor;
 
 import sjc.SJC;
+import sjc.ast.ASTUtil;
 import sjc.codegen.ByteCodeGenerator;
 import sjc.codegen.ClassByteCodes;
-import sjc.parser.ParserUtil;
 import sjc.symboltable.SymbolTable;
 import sjc.symboltable.SymbolTableBuilder;
 import sjc.type.TypeFactory;
@@ -34,7 +34,7 @@ public class ByteCodeGeneratorTest {
   @SuppressWarnings({ "rawtypes", "unchecked" })
   public static void testPass(final String filename, final Object[] args) {
     try {
-      final CompilationUnit cu = ParserUtil.ast(Util.getResource(
+      final CompilationUnit cu = ASTUtil.ast(Util.getResource(
           SJC.class,
           filename));
       final SymbolTable st = SymbolTableBuilder.build(cu);
