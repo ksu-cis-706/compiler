@@ -1,4 +1,4 @@
-package antlr.v4.example1;
+package antlrv4.example1;
 
 import java.io.StringReader;
 import java.math.BigInteger;
@@ -9,10 +9,10 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.Recognizer;
 
-import antlr.v4.example1.ExpParser.BinaryExpContext;
-import antlr.v4.example1.ExpParser.ExpContext;
-import antlr.v4.example1.ExpParser.IntLiteralContext;
-import antlr.v4.example1.ExpParser.ParenExpContext;
+import antlrv4.example1.ExpParser.BinaryExpContext;
+import antlrv4.example1.ExpParser.ExpContext;
+import antlrv4.example1.ExpParser.IntLiteralContext;
+import antlrv4.example1.ExpParser.ParenExpContext;
 
 public class ExpEvaluator extends ExpBaseVisitor<BigInteger> {
   public static BigInteger eval(final String exp) throws Exception {

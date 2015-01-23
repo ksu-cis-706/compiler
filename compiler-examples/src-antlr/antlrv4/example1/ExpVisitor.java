@@ -1,5 +1,5 @@
 // Generated from Exp.g4 by ANTLR 4.4
-package antlr.v4.example1;
+package antlrv4.example1;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 

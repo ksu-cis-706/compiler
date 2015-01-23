@@ -1,4 +1,4 @@
-package antlr.v4.example1;
+package antlrv4.example1;
 
 import java.math.BigInteger;
 

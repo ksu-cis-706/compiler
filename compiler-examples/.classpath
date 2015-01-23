@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="antlrv3/*/__Test__*.*" kind="src" path="src-antlr"/>
+	<classpathentry excluding="antlrv3/*/__Test__*.*|antlr/astexample/|antlr/example1/|antlr/example2/|antlr/example3/|antlr/example3/variant1/|antlr/example3/variant2/|antlr/example4/|antlr/explicitast/|antlrv3/ast/|antlrv3/asteval/" kind="src" path="src-antlr"/>
 	<classpathentry kind="src" path="src-jdt"/>
 	<classpathentry kind="src" path="src-asm"/>
 	<classpathentry kind="src" path="src-sjc"/>

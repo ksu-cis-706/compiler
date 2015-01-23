@@ -1,5 +1,5 @@
-// Generated from ExpSimple.g4 by ANTLR 4.4
-package antlr.v4.example1;
+// Generated from Exp.g4 by ANTLR 4.4
+package antlrv4.example1;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class ExpSimpleParser extends Parser {
+public class ExpParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.4", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -29,7 +29,7 @@ public class ExpSimpleParser extends Parser {
 	};
 
 	@Override
-	public String getGrammarFileName() { return "ExpSimple.g4"; }
+	public String getGrammarFileName() { return "Exp.g4"; }
 
 	@Override
 	public String[] getTokenNames() { return tokenNames; }
@@ -43,7 +43,7 @@ public class ExpSimpleParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public ExpSimpleParser(TokenStream input) {
+	public ExpParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -51,14 +51,14 @@ public class ExpSimpleParser extends Parser {
 		public ExpContext exp() {
 			return getRuleContext(ExpContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(ExpSimpleParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(ExpParser.EOF, 0); }
 		public StartContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_start; }
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExpSimpleVisitor ) return ((ExpSimpleVisitor<? extends T>)visitor).visitStart(this);
+			if ( visitor instanceof ExpVisitor ) return ((ExpVisitor<? extends T>)visitor).visitStart(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -85,20 +85,50 @@ public class ExpSimpleParser extends Parser {
 	}
 
 	public static class ExpContext extends ParserRuleContext {
-		public List<ExpContext> exp() {
-			return getRuleContexts(ExpContext.class);
-		}
-		public TerminalNode INT() { return getToken(ExpSimpleParser.INT, 0); }
-		public ExpContext exp(int i) {
-			return getRuleContext(ExpContext.class,i);
-		}
 		public ExpContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_exp; }
+	 
+		public ExpContext() { }
+		public void copyFrom(ExpContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ParenExpContext extends ExpContext {
+		public ExpContext exp() {
+			return getRuleContext(ExpContext.class,0);
+		}
+		public ParenExpContext(ExpContext ctx) { copyFrom(ctx); }
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExpSimpleVisitor ) return ((ExpSimpleVisitor<? extends T>)visitor).visitExp(this);
+			if ( visitor instanceof ExpVisitor ) return ((ExpVisitor<? extends T>)visitor).visitParenExp(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class IntLiteralContext extends ExpContext {
+		public TerminalNode INT() { return getToken(ExpParser.INT, 0); }
+		public IntLiteralContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof ExpVisitor ) return ((ExpVisitor<? extends T>)visitor).visitIntLiteral(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	public static class BinaryExpContext extends ExpContext {
+		public ExpContext e1;
+		public Token op;
+		public ExpContext e2;
+		public List<ExpContext> exp() {
+			return getRuleContexts(ExpContext.class);
+		}
+		public ExpContext exp(int i) {
+			return getRuleContext(ExpContext.class,i);
+		}
+		public BinaryExpContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof ExpVisitor ) return ((ExpVisitor<? extends T>)visitor).visitBinaryExp(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -123,11 +153,18 @@ public class ExpSimpleParser extends Parser {
 			switch (_input.LA(1)) {
 			case INT:
 				{
+				_localctx = new IntLiteralContext(_localctx);
+				_ctx = _localctx;
+				_prevctx = _localctx;
+
 				setState(8); match(INT);
 				}
 				break;
 			case T__4:
 				{
+				_localctx = new ParenExpContext(_localctx);
+				_ctx = _localctx;
+				_prevctx = _localctx;
 				setState(9); match(T__4);
 				setState(10); exp(0);
 				setState(11); match(T__3);
@@ -149,32 +186,36 @@ public class ExpSimpleParser extends Parser {
 					switch ( getInterpreter().adaptivePredict(_input,1,_ctx) ) {
 					case 1:
 						{
-						_localctx = new ExpContext(_parentctx, _parentState);
+						_localctx = new BinaryExpContext(new ExpContext(_parentctx, _parentState));
+						((BinaryExpContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_exp);
 						setState(15);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
 						setState(16);
+						((BinaryExpContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__5) | (1L << T__2))) != 0)) ) {
-						_errHandler.recoverInline(this);
+							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
 						}
 						consume();
-						setState(17); exp(3);
+						setState(17); ((BinaryExpContext)_localctx).e2 = exp(3);
 						}
 						break;
 					case 2:
 						{
-						_localctx = new ExpContext(_parentctx, _parentState);
+						_localctx = new BinaryExpContext(new ExpContext(_parentctx, _parentState));
+						((BinaryExpContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_exp);
 						setState(18);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
 						setState(19);
+						((BinaryExpContext)_localctx).op = _input.LT(1);
 						_la = _input.LA(1);
 						if ( !(_la==T__1 || _la==T__0) ) {
-						_errHandler.recoverInline(this);
+							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
 						}
 						consume();
-						setState(20); exp(2);
+						setState(20); ((BinaryExpContext)_localctx).e2 = exp(2);
 						}
 						break;
 					}
