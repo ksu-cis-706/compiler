@@ -139,7 +139,7 @@ public class StaticJavaV4Lexer extends Lexer {
 		"\2\2\u00e4\u00dd\3\2\2\2\u00e5P\3\2\2\2\u00e6\u00e8\t\4\2\2\u00e7\u00e6"+
 		"\3\2\2\2\u00e8\u00e9\3\2\2\2\u00e9\u00e7\3\2\2\2\u00e9\u00ea\3\2\2\2\u00ea"+
 		"\u00eb\3\2\2\2\u00eb\u00ec\b)\2\2\u00ecR\3\2\2\2\u00ed\u00ee\13\2\2\2"+
-		"\u00eeT\3\2\2\2\7\2\u00d9\u00e1\u00e4\u00e9\3\2\3\2";
+		"\u00eeT\3\2\2\2\7\2\u00d9\u00e1\u00e4\u00e9\3\b\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

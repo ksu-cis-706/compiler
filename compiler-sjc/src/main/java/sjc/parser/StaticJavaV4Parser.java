@@ -725,36 +725,38 @@ public class StaticJavaV4Parser extends Parser {
 		StatementContext _localctx = new StatementContext(_ctx, getState());
 		enterRule(_localctx, 24, RULE_statement);
 		try {
-			enterOuterAlt(_localctx, 1);
-			{
 			setState(135);
 			switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
 			case 1:
+				enterOuterAlt(_localctx, 1);
 				{
 				setState(130); assignStatement();
 				}
 				break;
 			case 2:
+				enterOuterAlt(_localctx, 2);
 				{
 				setState(131); ifStatement();
 				}
 				break;
 			case 3:
+				enterOuterAlt(_localctx, 3);
 				{
 				setState(132); whileStatement();
 				}
 				break;
 			case 4:
+				enterOuterAlt(_localctx, 4);
 				{
 				setState(133); invokeExpStatement();
 				}
 				break;
 			case 5:
+				enterOuterAlt(_localctx, 5);
 				{
 				setState(134); returnStatement();
 				}
 				break;
-			}
 			}
 		}
 		catch (RecognitionException re) {

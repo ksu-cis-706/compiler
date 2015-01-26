@@ -15,7 +15,7 @@ INT
 
 // Whitespace -- ignored
 WS
-  : [ \r\t\u000C\n]+ -> channel(HIDDEN)
+  : [ \r\t\u000C\n]+ -> skip
   ;
   
 // Any other character is an error character
