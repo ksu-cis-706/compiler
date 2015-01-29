@@ -16,6 +16,6 @@ public class IntLiteral extends Exp {
 
   @Override
   public String toString() {
-    return this.value.toString();
+    return "lit(" + this.value.toString() + ")";
   }
 }
