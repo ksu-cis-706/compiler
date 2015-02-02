@@ -11,10 +11,11 @@ Setting Up Development Environment
    http://compiler.santoslab.org/tools) 
 
 2. Launch `Eclipse in Sireum <http://www.sireum.org/features.html>`_ 
-   (add ``-h`` for help to supply custom Eclipse command-line arguments such
-   as configuring memory; the default memory configuration is for 1GB max heap
-   space)::
+   (add ``-h`` on the second command for help to supply custom Eclipse 
+   command-line arguments such as configuring memory; the default memory
+   configuration is for 1GB max heap space)::
 
+       sireum install Antlr
        sireum launch eclipse
 
    Pick a directory for your workspace when asked.
