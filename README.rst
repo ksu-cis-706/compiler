@@ -8,7 +8,7 @@ Setting Up Development Environment
    http://www.sireum.org/download.
    
    (Alternatively, you can install the compiler tools listed at:
-   http://compiler.santoslab.org/tools) 
+   http://compilers.santoslab.org/notes.html) 
 
 2. Launch `Eclipse in Sireum <http://www.sireum.org/features.html>`_ 
    (add ``-h`` on the second command for help to supply custom Eclipse 
@@ -28,6 +28,7 @@ Setting Up Development Environment
 3. Add ``SIREUM_HOME/apps/platform/java`` in Eclipe's 
    `Java Installed JREs preference page <http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fdebug%2Fref-installed_jres.htm>`_,
    and make it the default. In addition, set Eclipse's `Java Compiler compliance level <http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fref-preferences-compiler.htm>`_ to 1.7.
+   (Similarly, if you are using Scala, you need to set the Scala compiler to generate jvm-1.7 bytecode.)
    
 4. Download the `StaticJava Compiler (sjc) project set file <https://github.com/santoslab/compiler/blob/master/sjc.psf>`_.
    `Import the project set file <http://wiki.eclipse.org/PSF>`_.
