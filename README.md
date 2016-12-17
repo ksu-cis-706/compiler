@@ -2,6 +2,8 @@
 
 [![Run Status](https://api.shippable.com/projects/55534a22edd7f2c052ebbc77/badge?branch=master)](https://app.shippable.com/projects/55534a22edd7f2c052ebbc77)
 
+[API doc](https://cdn.rawgit.com/ksu-cis-706/compiler/master/sjc/doc/api/index.html)
+
 This repository hosts the StaticJava Compiler (sjc) source code for 
 [K-State CIS 706 graduate course on Translator Design I](http://compilers.santoslab.org).
 
