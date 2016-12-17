@@ -1,0 +1,11 @@
+
+sjc
+sjc.analysis
+sjc.annotation
+sjc.ast
+sjc.codegen
+sjc.parser
+sjc.symboltable
+sjc.type
+sjc.type.checker
+sjc.util
