@@ -1,5 +1,10 @@
 val scalaVer = "2.12.1"
 
+val sjcInputKey = {
+  val sjc = inputKey[Unit]("Run sjc")
+  sjc
+}
+
 lazy val commonSettings = Seq(
   organization := "org.santoslab.compilers",
   incOptions := incOptions.value.withNameHashing(true),
@@ -25,7 +30,11 @@ lazy val commonSettings = Seq(
   crossPaths := false
 )
 
-lazy val sjc = (project in file("sjc")).settings(commonSettings: _*)
+lazy val sjc = (project in file("sjc")).
+  settings(commonSettings: _*).
+  settings(
+    fullRunInputTask(sjcInputKey, Compile, "sjc.SJC")
+  )
 
 lazy val examples = (project in file("examples")).
   settings(commonSettings: _*).
