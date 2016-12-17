@@ -20,7 +20,7 @@ sbt test
 ## Running sjc
 
 ```
-sbt "sjc <filename.java>"
+sbt "sjc <filepath.java>"
 ```
 
 For example,
