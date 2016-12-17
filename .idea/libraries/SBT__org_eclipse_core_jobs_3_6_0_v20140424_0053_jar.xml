@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.eclipse.core:jobs:3.6.0-v20140424-0053:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.core/jobs/jars/jobs-3.6.0-v20140424-0053.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.core/jobs/srcs/jobs-3.6.0-v20140424-0053-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

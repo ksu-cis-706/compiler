@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.eclipse:osgi:3.10.0-v20140606-1445:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse/osgi/jars/osgi-3.10.0-v20140606-1445.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse/osgi/srcs/osgi-3.10.0-v20140606-1445-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

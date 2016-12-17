@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="javadoc">
-    <target name="javadoc">
-        <javadoc additionalparam="-notimestamp" access="public" author="true" classpath="lib/junit-4.11.jar:lib/org.eclipse.core.resources_3.8.100.v20130521-2026.jar:lib/antlr-runtime-3.5.jar:lib/asm-all-4.1.jar:lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:lib/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar:lib/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar:lib/org.eclipse.osgi_3.9.0.v20130529-1710.jar:lib/org.eclipse.jdt.core_3.9.0.v20130604-1421.jar:lib/org.eclipse.core.runtime_3.9.0.v20130326-1255.jar:lib/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar" destdir="doc" doctitle="Static Java Compiler" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="sjc.symboltable,sjc.type.checker,sjc.parser,sjc.annotation,sjc.codegen,sjc.util,sjc.type,sjc.analysis" source="1.7" sourcefiles="src/main/java/StaticJavaLib.java,src/main/java/sjc/SJC.java" sourcepath="src/main/java:src/test/java" splitindex="true" use="true" version="true"/>
-    </target>
-</project>

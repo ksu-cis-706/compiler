@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compiler.iml" filepath="$PROJECT_DIR$/.idea/modules/compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/compiler-build.iml" filepath="$PROJECT_DIR$/.idea/modules/compiler-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/examples.iml" filepath="$PROJECT_DIR$/.idea/modules/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/examples-build.iml" filepath="$PROJECT_DIR$/.idea/modules/examples-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sjc.iml" filepath="$PROJECT_DIR$/.idea/modules/sjc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sjc-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sjc-build.iml" />
+    </modules>
+  </component>
+</project>
