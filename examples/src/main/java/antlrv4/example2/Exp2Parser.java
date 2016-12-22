@@ -1,14 +1,17 @@
-// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/examples/src/main/java/antlrv4/example2/Exp2.g4 by ANTLR 4.5.3
+// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/examples/src/main/java/antlrv4/example2/Exp2.g4 by ANTLR 4.6
 package antlrv4.example2;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class Exp2Parser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.5.3", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -191,6 +194,7 @@ public class Exp2Parser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(14);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case INT:
 				{
@@ -251,7 +255,10 @@ public class Exp2Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__2) | (1L << T__3) | (1L << T__4))) != 0)) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(18);
@@ -270,7 +277,10 @@ public class Exp2Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !(_la==T__5 || _la==T__6) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(21);

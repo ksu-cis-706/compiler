@@ -1,12 +1,17 @@
-// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/examples/src/main/java/antlrv4/example1/Exp.g4 by ANTLR 4.5.3
+// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/examples/src/main/java/antlrv4/example1/Exp.g4 by ANTLR 4.6
 package antlrv4.example1;
+import org.antlr.v4.runtime.Lexer;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.TokenStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ExpLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.5.3", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =

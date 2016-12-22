@@ -1,4 +1,4 @@
-// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/sjc/src/main/java/sjc/parser/StaticJavaV4.g4 by ANTLR 4.5.3
+// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/sjc/src/main/java/sjc/parser/StaticJavaV4.g4 by ANTLR 4.6
 package sjc.parser;
 
 import org.antlr.v4.runtime.ParserRuleContext;

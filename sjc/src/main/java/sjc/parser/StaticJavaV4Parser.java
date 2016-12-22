@@ -1,15 +1,17 @@
-// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/sjc/src/main/java/sjc/parser/StaticJavaV4.g4 by ANTLR 4.5.3
+// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/sjc/src/main/java/sjc/parser/StaticJavaV4.g4 by ANTLR 4.6
 package sjc.parser;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class StaticJavaV4Parser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.5.3", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -457,6 +459,7 @@ public class StaticJavaV4Parser extends Parser {
 			setState(86);
 			match(T__6);
 			setState(88);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==T__11 || _la==T__12) {
 				{
@@ -535,6 +538,7 @@ public class StaticJavaV4Parser extends Parser {
 		enterRule(_localctx, 12, RULE_type);
 		try {
 			setState(97);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__11:
 				_localctx = new BooleanTypeContext(_localctx);
@@ -619,6 +623,7 @@ public class StaticJavaV4Parser extends Parser {
 		enterRule(_localctx, 14, RULE_returnType);
 		try {
 			setState(101);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__5:
 				_localctx = new VoidTypeContext(_localctx);
@@ -1100,6 +1105,7 @@ public class StaticJavaV4Parser extends Parser {
 			setState(153);
 			match(T__3);
 			setState(163);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==T__16) {
 				{
@@ -1294,6 +1300,7 @@ public class StaticJavaV4Parser extends Parser {
 			setState(181);
 			match(T__18);
 			setState(183);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << T__24) | (1L << ID) | (1L << INT))) != 0)) {
 				{
@@ -1594,7 +1601,10 @@ public class StaticJavaV4Parser extends Parser {
 				_la = _input.LA(1);
 				if ( !(_la==T__22 || _la==T__23) ) {
 					((UnaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-				} else {
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
 					consume();
 				}
 				setState(200);
@@ -1637,7 +1647,10 @@ public class StaticJavaV4Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__25) | (1L << T__26) | (1L << T__27))) != 0)) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(207);
@@ -1656,7 +1669,10 @@ public class StaticJavaV4Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !(_la==T__22 || _la==T__23) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(210);
@@ -1675,7 +1691,10 @@ public class StaticJavaV4Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__28) | (1L << T__29) | (1L << T__30) | (1L << T__31))) != 0)) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(213);
@@ -1694,7 +1713,10 @@ public class StaticJavaV4Parser extends Parser {
 						_la = _input.LA(1);
 						if ( !(_la==T__32 || _la==T__33) ) {
 							((BinaryExpContext)_localctx).op = (Token)_errHandler.recoverInline(this);
-						} else {
+						}
+						else {
+							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+							_errHandler.reportMatch(this);
 							consume();
 						}
 						setState(216);
@@ -1800,6 +1822,7 @@ public class StaticJavaV4Parser extends Parser {
 			setState(233);
 			match(T__6);
 			setState(235);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << T__24) | (1L << ID) | (1L << INT))) != 0)) {
 				{
