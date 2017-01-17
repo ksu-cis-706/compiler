@@ -7,17 +7,27 @@
 This repository hosts the StaticJava Compiler (sjc) source code for 
 [K-State CIS 706 graduate course on Translator Design I](http://compilers.santoslab.org).
 
+
 ## Requirements
 
-* Java 8 (or above)
+* [Java 8](https://jdk8.java.net/)
 
 * [Sbt](http://scala-sbt.org)
+
+Alternatively, you can use Java and Sbt included in 
+[Sireum v3](https://github.com/sireum/v3#installing-and-running-sireum) 
+(either IVE or CLI).
+
+Java can be found at ``SIREUM_HOME/platform/java`` and
+Sbt can be found at ``SIREUM_HOME/platform/sbt``.
+
 
 ## Compiling and Testing
 
 ```
 sbt test
 ```
+
 
 ## Running sjc
 
@@ -31,9 +41,15 @@ For example,
 sbt "sjc sjc/src/test/java/Power.java"
 ```
 
+
 ## Development Environment
 
-[IntelliJ](https://www.jetbrains.com/idea/) with the following plugins installed:
+It is recommended to use 
+[Sireum IVE](https://github.com/sireum/v3#sireum-integrated-verification-environment-ive)
+which comes with all the necessary plugins for this project.
+
+Alternatively, you can use [IntelliJ](https://www.jetbrains.com/idea/) 
+with the following plugins installed:
 
 * [Scala](https://plugins.jetbrains.com/plugin/1347)
 
@@ -46,5 +62,3 @@ sbt "sjc sjc/src/test/java/Power.java"
 * [ASM Bytecode Outline](https://plugins.jetbrains.com/plugin/5918)
 
 * [Markdown support](https://plugins.jetbrains.com/plugin/7793)
-
-* [SnakeYAML](https://plugins.jetbrains.com/plugin/8142)
