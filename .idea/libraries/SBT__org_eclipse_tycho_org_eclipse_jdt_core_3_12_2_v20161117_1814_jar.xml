@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.eclipse.tycho:org.eclipse.jdt.core:3.12.2.v20161117-1814:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.tycho/org.eclipse.jdt.core/jars/org.eclipse.jdt.core-3.12.2.v20161117-1814.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.eclipse.tycho/org.eclipse.jdt.core/srcs/org.eclipse.jdt.core-3.12.2.v20161117-1814-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
