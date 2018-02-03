@@ -115,7 +115,7 @@ public class StaticJavaASTBuilder extends StaticJavaV4BaseVisitor<ASTNode> {
     StaticJavaASTBuilder.unopMap.put("!", PrefixExpression.Operator.NOT);
   }
 
-  protected AST ast = AST.newAST(AST.JLS8);
+  protected AST ast = AST.newAST(AST.JLS9);
 
   private StaticJavaASTBuilder() {
   }

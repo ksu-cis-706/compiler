@@ -2,10 +2,7 @@ package sjc.parser;
 
 import java.io.FileReader;
 
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.BaseErrorListener;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.Recognizer;
+import org.antlr.v4.runtime.*;
 
 import sjc.parser.StaticJavaV4Parser.CompilationUnitContext;
 
@@ -27,7 +24,7 @@ public class ParserUtil {
    */
   public static CompilationUnitContext parse(final String path)
       throws Exception {
-    final ANTLRInputStream input = new ANTLRInputStream(new FileReader(path));
+    final CodePointCharStream input = CharStreams.fromReader(new FileReader(path));
     final StaticJavaV4Lexer lexer = new StaticJavaV4Lexer(input);
     final org.antlr.v4.runtime.CommonTokenStream tokens = new org.antlr.v4.runtime.CommonTokenStream(
         lexer);

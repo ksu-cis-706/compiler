@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: org.eclipse.platform:org.eclipse.core.jobs:[3.2.0,4.0.0):jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/3.9.2/org.eclipse.core.jobs-3.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/3.9.2/org.eclipse.core.jobs-3.9.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.core.jobs/3.9.2/org.eclipse.core.jobs-3.9.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -2,17 +2,13 @@ package antlrv4.example1;
 
 import java.io.StringReader;
 
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.BaseErrorListener;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.Recognizer;
+import org.antlr.v4.runtime.*;
 
 import antlrv4.example1.ExpParser.ExpContext;
 
 public class ExpParseUtil {
   public static ExpContext parse(final String exp) throws Exception {
-    final ANTLRInputStream input = new ANTLRInputStream(new StringReader(exp));
+    final CodePointCharStream input = CharStreams.fromReader(new StringReader(exp));
     final ExpLexer lexer = new ExpLexer(input);
     final CommonTokenStream tokens = new CommonTokenStream(lexer);
     final ExpParser parser = new ExpParser(tokens);

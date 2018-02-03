@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: org.eclipse.platform:org.eclipse.osgi:[3.7.0,4.0.0):jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.osgi/3.12.50/org.eclipse.osgi-3.12.50.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.osgi/3.12.50/org.eclipse.osgi-3.12.50-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.osgi/3.12.50/org.eclipse.osgi-3.12.50-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

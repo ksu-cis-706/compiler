@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: org.eclipse.platform:org.eclipse.equinox.app:1.3.400:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/1.3.400/org.eclipse.equinox.app-1.3.400.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/1.3.400/org.eclipse.equinox.app-1.3.400-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.coursier/cache/v1/https/repo1.maven.org/maven2/org/eclipse/platform/org.eclipse.equinox.app/1.3.400/org.eclipse.equinox.app-1.3.400-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
