@@ -53,12 +53,10 @@ with the following plugins installed:
 
 * [Scala](https://plugins.jetbrains.com/plugin/1347)
 
-* [Sbt](https://plugins.jetbrains.com/plugin/5007)
-
 * [ANTLR v4 grammar plugin](https://plugins.jetbrains.com/plugin/7358)
 
 * [JDT ASTView plugin](https://plugins.jetbrains.com/plugin/9345)
 
-* [ASM Bytecode Outline](https://plugins.jetbrains.com/plugin/5918)
+* [ASM Bytecode Outline](http://plugins.jetbrains.com/plugin/10302-asm-bytecode-viewer)
 
 * [Markdown support](https://plugins.jetbrains.com/plugin/7793)
