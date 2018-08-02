@@ -57,6 +57,6 @@ with the following plugins installed:
 
 * [JDT ASTView plugin](https://plugins.jetbrains.com/plugin/9345)
 
-* [ASM Bytecode Outline](http://plugins.jetbrains.com/plugin/10302-asm-bytecode-viewer)
+* [ASM Bytecode Viewer](http://plugins.jetbrains.com/plugin/10302-asm-bytecode-viewer)
 
 * [Markdown support](https://plugins.jetbrains.com/plugin/7793)
