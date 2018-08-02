@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="examples-build" external.linked.project.path="$MODULE_DIR$/../../examples/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="SUB:DOLLAR8aa76edcc10c0273ec44.`examples`, SUB:DOLLAR8aa76edcc10c0273ec44.`sjcInputKey`, SUB:DOLLAR8aa76edcc10c0273ec44.`sjc`, _root_.net.virtualvoid.sbt.graph.DependencyGraphPlugin.autoImport._, _root_.com.timushev.sbt.updates.UpdatesPlugin.autoImport._, _root_.xerial.sbt.Sonatype.autoImport._, _root_.com.typesafe.sbt.SbtPgp.autoImport._, _root_.coursier.CoursierPlugin.autoImport._, _root_.sbt.Keys._, _root_.sbt._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.net.virtualvoid.sbt.graph.DependencyGraphPlugin, _root_.com.timushev.sbt.updates.UpdatesPlugin, _root_.xerial.sbt.Sonatype, _root_.com.typesafe.sbt.SbtPgp, _root_.coursier.CoursierPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, file:/Users/robby/.sbt/preloaded/|maven|local-preloaded, /Users/robby/.ivy2/cache|ivy|Local cache" type="SBT_MODULE" version="4">
+<module external.linked.project.id="examples-build [file:/Users/robby/Repositories/706/compiler/]" external.linked.project.path="$MODULE_DIR$/../../examples/project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="SUB:DOLLARbaeede59ea406ffd55f8.`examples`, SUB:DOLLARbaeede59ea406ffd55f8.`sjcInputKey`, SUB:DOLLARbaeede59ea406ffd55f8.`sjc`, _root_.org.jetbrains.sbt.IdeaShellPlugin.autoImport._, _root_.com.typesafe.sbt.SbtPgp.autoImport._, _root_.xerial.sbt.Sonatype.autoImport._, _root_.coursier.CoursierPlugin.autoImport._, _root_.sbt.Keys._, _root_.sbt._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.org.jetbrains.sbt.StructurePlugin, _root_.org.jetbrains.sbt.IdeaShellPlugin, _root_.com.typesafe.sbt.SbtPgp, _root_.xerial.sbt.Sonatype, _root_.coursier.CoursierPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" sbt.resolvers="https://repo1.maven.org/maven2/|maven|public, file:/Users/robby/.sbt/preloaded/|maven|local-preloaded, /Users/robby/.ivy2/cache|ivy|Local cache" type="SBT_MODULE" version="4">
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../examples/project/target/idea-classes" />
     <output-test url="file://$MODULE_DIR$/../../examples/project/target/idea-test-classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../examples/project">
-      <sourceFolder url="file://$MODULE_DIR$/../../examples/project" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../examples/project/project/target" />
       <excludeFolder url="file://$MODULE_DIR$/../../examples/project/target" />
     </content>
@@ -38,12 +37,11 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.12/bundles/scalaz-core_2.12-7.2.16.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-effect_2.12/bundles/scalaz-effect_2.12-7.2.16.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/com.dwijnand/sbt-compat/jars/sbt-compat-1.1.0.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/com.jsuereth/sbt-pgp/jars/sbt-pgp-1.1.0.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/com.timushev.sbt/sbt-updates/jars/sbt-updates-0.3.3.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/io.get-coursier/sbt-coursier/jars/sbt-coursier-1.0.0.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/io.get-coursier/sbt-shared/jars/sbt-shared-1.0.0.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/net.virtual-void/sbt-dependency-graph/jars/sbt-dependency-graph-0.9.0.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/org.jetbrains/sbt-idea-shell/jars/sbt-idea-shell-2017.2.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/org.jetbrains/sbt-structure-extractor/jars/sbt-structure-extractor-2018.2.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/org.xerial.sbt/sbt-sonatype/jars/sbt-sonatype-2.0.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.4/lib/jline.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.4/lib/scala-compiler.jar!/" />
@@ -129,5 +127,10 @@
         <SOURCES />
       </library>
     </orderEntry>
+  </component>
+  <component name="SbtModule">
+    <option name="buildForId" value="examples" />
+    <option name="buildForURI" value="file:$MODULE_DIR$/../../" />
+    <option name="imports" value="SUB:DOLLARbaeede59ea406ffd55f8.`examples`, SUB:DOLLARbaeede59ea406ffd55f8.`sjcInputKey`, SUB:DOLLARbaeede59ea406ffd55f8.`sjc`, _root_.org.jetbrains.sbt.IdeaShellPlugin.autoImport._, _root_.com.typesafe.sbt.SbtPgp.autoImport._, _root_.xerial.sbt.Sonatype.autoImport._, _root_.coursier.CoursierPlugin.autoImport._, _root_.sbt.Keys._, _root_.sbt._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.org.jetbrains.sbt.StructurePlugin, _root_.org.jetbrains.sbt.IdeaShellPlugin, _root_.com.typesafe.sbt.SbtPgp, _root_.xerial.sbt.Sonatype, _root_.coursier.CoursierPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
   </component>
 </module>

@@ -1,4 +1,4 @@
-// Generated from /Users/robby/Repositories/ksu-cis-706/compiler/examples/src/main/java/antlrv4/example2/Exp2.g4 by ANTLR 4.6
+// Generated from /Users/robby/Repositories/706/compiler/examples/src/main/java/antlrv4/example2/Exp2.g4 by ANTLR 4.7
 package antlrv4.example2;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class Exp2Parser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -90,6 +90,14 @@ public class Exp2Parser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_start; }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).enterStart(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).exitStart(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Exp2Visitor ) return ((Exp2Visitor<? extends T>)visitor).visitStart(this);
 			else return visitor.visitChildren(this);
@@ -134,6 +142,14 @@ public class Exp2Parser extends Parser {
 		public TerminalNode ID() { return getToken(Exp2Parser.ID, 0); }
 		public IdExpContext(ExpContext ctx) { copyFrom(ctx); }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).enterIdExp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).exitIdExp(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Exp2Visitor ) return ((Exp2Visitor<? extends T>)visitor).visitIdExp(this);
 			else return visitor.visitChildren(this);
@@ -145,6 +161,14 @@ public class Exp2Parser extends Parser {
 		}
 		public ParenExpContext(ExpContext ctx) { copyFrom(ctx); }
 		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).enterParenExp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).exitParenExp(this);
+		}
+		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Exp2Visitor ) return ((Exp2Visitor<? extends T>)visitor).visitParenExp(this);
 			else return visitor.visitChildren(this);
@@ -153,6 +177,14 @@ public class Exp2Parser extends Parser {
 	public static class IntLiteralContext extends ExpContext {
 		public TerminalNode INT() { return getToken(Exp2Parser.INT, 0); }
 		public IntLiteralContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).enterIntLiteral(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).exitIntLiteral(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Exp2Visitor ) return ((Exp2Visitor<? extends T>)visitor).visitIntLiteral(this);
@@ -170,6 +202,14 @@ public class Exp2Parser extends Parser {
 			return getRuleContext(ExpContext.class,i);
 		}
 		public BinaryExpContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).enterBinaryExp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Exp2Listener ) ((Exp2Listener)listener).exitBinaryExp(this);
+		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof Exp2Visitor ) return ((Exp2Visitor<? extends T>)visitor).visitBinaryExp(this);
@@ -325,11 +365,11 @@ public class Exp2Parser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\r\36\4\2\t\2\4\3"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\r\36\4\2\t\2\4\3"+
 		"\t\3\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3\21\n\3\3\3\3\3\3\3\3"+
 		"\3\3\3\3\3\7\3\31\n\3\f\3\16\3\34\13\3\3\3\2\3\4\4\2\4\2\4\3\2\5\7\3\2"+
-		"\b\t\37\2\6\3\2\2\2\4\20\3\2\2\2\6\7\5\4\3\2\7\b\7\2\2\3\b\3\3\2\2\2\t"+
-		"\n\b\3\1\2\n\21\7\13\2\2\13\21\7\n\2\2\f\r\7\3\2\2\r\16\5\4\3\2\16\17"+
+		"\b\t\2\37\2\6\3\2\2\2\4\20\3\2\2\2\6\7\5\4\3\2\7\b\7\2\2\3\b\3\3\2\2\2"+
+		"\t\n\b\3\1\2\n\21\7\13\2\2\13\21\7\n\2\2\f\r\7\3\2\2\r\16\5\4\3\2\16\17"+
 		"\7\4\2\2\17\21\3\2\2\2\20\t\3\2\2\2\20\13\3\2\2\2\20\f\3\2\2\2\21\32\3"+
 		"\2\2\2\22\23\f\4\2\2\23\24\t\2\2\2\24\31\5\4\3\5\25\26\f\3\2\2\26\27\t"+
 		"\3\2\2\27\31\5\4\3\4\30\22\3\2\2\2\30\25\3\2\2\2\31\34\3\2\2\2\32\30\3"+
