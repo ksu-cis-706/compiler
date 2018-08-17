@@ -15,7 +15,7 @@
             <option value="$PROJECT_DIR$/sjc/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.1.0" />
+        <option name="sbtVersion" value="1.2.1" />
         <option name="useAutoImport" value="true" />
         <option name="useSbtShell" value="true" />
       </SbtProjectSettings>
