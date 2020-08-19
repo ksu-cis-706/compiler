@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class StaticJavaV4Parser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -30,27 +30,36 @@ public class StaticJavaV4Parser extends Parser {
 		RULE_localDeclaration = 11, RULE_statement = 12, RULE_assignStatement = 13, 
 		RULE_ifStatement = 14, RULE_whileStatement = 15, RULE_invokeExpStatement = 16, 
 		RULE_returnStatement = 17, RULE_exp = 18, RULE_invoke = 19, RULE_args = 20;
-	public static final String[] ruleNames = {
-		"compilationUnit", "classDefinition", "memberDeclaration", "mainMethodDeclaration", 
-		"fieldDeclaration", "methodDeclaration", "type", "returnType", "params", 
-		"param", "methodBody", "localDeclaration", "statement", "assignStatement", 
-		"ifStatement", "whileStatement", "invokeExpStatement", "returnStatement", 
-		"exp", "invoke", "args"
-	};
+	private static String[] makeRuleNames() {
+		return new String[] {
+			"compilationUnit", "classDefinition", "memberDeclaration", "mainMethodDeclaration", 
+			"fieldDeclaration", "methodDeclaration", "type", "returnType", "params", 
+			"param", "methodBody", "localDeclaration", "statement", "assignStatement", 
+			"ifStatement", "whileStatement", "invokeExpStatement", "returnStatement", 
+			"exp", "invoke", "args"
+		};
+	}
+	public static final String[] ruleNames = makeRuleNames();
 
-	private static final String[] _LITERAL_NAMES = {
-		null, "'public'", "'class'", "'{'", "'}'", "'static'", "'void'", "'('", 
-		"'['", "']'", "')'", "';'", "'boolean'", "'int'", "','", "'='", "'if'", 
-		"'else'", "'while'", "'return'", "'true'", "'false'", "'null'", "'-'", 
-		"'+'", "'!'", "'*'", "'/'", "'%'", "'<'", "'>'", "'<='", "'>='", "'=='", 
-		"'!='", "'&&'", "'||'", "'.'"
-	};
-	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, "ID", "INT", "WS", "ERROR"
-	};
+	private static String[] makeLiteralNames() {
+		return new String[] {
+			null, "'public'", "'class'", "'{'", "'}'", "'static'", "'void'", "'('", 
+			"'['", "']'", "')'", "';'", "'boolean'", "'int'", "','", "'='", "'if'", 
+			"'else'", "'while'", "'return'", "'true'", "'false'", "'null'", "'-'", 
+			"'+'", "'!'", "'*'", "'/'", "'%'", "'<'", "'>'", "'<='", "'>='", "'=='", 
+			"'!='", "'&&'", "'||'", "'.'"
+		};
+	}
+	private static final String[] _LITERAL_NAMES = makeLiteralNames();
+	private static String[] makeSymbolicNames() {
+		return new String[] {
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, "ID", "INT", "WS", "ERROR"
+		};
+	}
+	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**
@@ -100,6 +109,7 @@ public class StaticJavaV4Parser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
+
 	public static class CompilationUnitContext extends ParserRuleContext {
 		public ClassDefinitionContext classDefinition() {
 			return getRuleContext(ClassDefinitionContext.class,0);

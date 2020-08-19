@@ -1,0 +1,26 @@
+name: CI
+
+on: [push]
+
+jobs:
+
+  ci-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set env.workspace
+        run: echo "::set-env name=workspace::$GITHUB_WORKSPACE"
+      - name: Cache Coursier
+        id: cache-coursier
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.workspace }}/cache/coursier
+          key: ${{ runner.os }}-${{ hashFiles('build.sbt') }}-coursier
+      - name: Setup Scala
+        uses: olafurpg/setup-scala@v5
+      - name: Test
+        run: |
+          export COURSIER_CACHE=$GITHUB_WORKSPACE/cache/coursier
+          cd $GITHUB_WORKSPACE
+          sbt "project examples" test "project sjc" test
