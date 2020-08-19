@@ -1,6 +1,6 @@
 # Compiler
 
-[![Run Status](https://api.shippable.com/projects/55534a22edd7f2c052ebbc77/badge?branch=master)](https://app.shippable.com/projects/55534a22edd7f2c052ebbc77)
+[![Actions Status](https://github.com/ksu-cis-706/compiler/workflows/CI/badge.svg)](https://github.com/ksu-cis-706/compiler/actions)
 
 [API doc](https://cdn.rawgit.com/ksu-cis-706/compiler/master/sjc/doc/api/index.html)
 
